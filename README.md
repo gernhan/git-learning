@@ -90,77 +90,77 @@
 
 ### **`Nhánh và Merge`:**
 
-8. **`git branch`**: `Liệt kê tất cả các nhánh trong repository`.
+1. **`git branch`**: `Liệt kê tất cả các nhánh trong repository`.
 
-9. **`git branch <branch_name>`**: `Tạo một nhánh mới`.
+2. **`git branch <branch_name>`**: `Tạo một nhánh mới`.
 
-10. **`git checkout <branch_name>`**: `Chuyển đổi sang một nhánh khác`.
+3. **`git checkout <branch_name>`**: `Chuyển đổi sang một nhánh khác`.
 
-11. **`git merge <branch_name>`**: `Hợp nhất một nhánh vào nhánh hiện tại`.
+4. **`git merge <branch_name>`**: `Hợp nhất một nhánh vào nhánh hiện tại`.
 
-12. **`git branch -d <branch_name>`**: `Xóa một nhánh đã được merge`.
+5. **`git branch -d <branch_name>`**: `Xóa một nhánh đã được merge`.
 
-13. **`git branch -D <branch_name>`**: `Xóa một nhánh mà không cần kiểm tra đã merge hay chưa`.
+6. **`git branch -D <branch_name>`**: `Xóa một nhánh mà không cần kiểm tra đã merge hay chưa`.
 
 ### **Remote Repository:**
 
-14. **`git remote add <name> <url>`**: `Thêm một remote repository`.
+1. **`git remote add <name> <url>`**: `Thêm một remote repository`.
 
-15. **`git remote -v`**: `Hiển thị danh sách các remote repository`.
+2. **`git remote -v`**: `Hiển thị danh sách các remote repository`.
 
-16. **`git fetch <remote>`**: `Lấy tất cả các thay đổi từ remote repository, nhưng không hợp nhất vào working directory`.
+3. **`git fetch <remote>`**: `Lấy tất cả các thay đổi từ remote repository, nhưng không hợp nhất vào working directory`.
 
-17. **`git pull <remote> <branch>`**: `Lấy và hợp nhất thay đổi từ remote repository vào working directory`.
+4. **`git pull <remote> <branch>`**: `Lấy và hợp nhất thay đổi từ remote repository vào working directory`.
 
-18. **`git push <remote> <branch>`**: `Đẩy các thay đổi từ local repository lên remote repository`.
+5. **`git push <remote> <branch>`**: `Đẩy các thay đổi từ local repository lên remote repository`.
 
 ### **`Xem Thay Đổi`:**
 
-19. **`git diff`**: `Xem sự khác biệt giữa working directory và index`.
+1. **`git diff`**: `Xem sự khác biệt giữa working directory và index`.
 
-20. **`git diff --staged`**: `Xem sự khác biệt giữa index và HEAD`.
+2. **`git diff --staged`**: `Xem sự khác biệt giữa index và HEAD`.
 
-21. **`git diff <commit_id_1> <commit_id_2>`**: `Xem sự khác biệt giữa hai commit`.
+3. **`git diff <commit_id_1> <commit_id_2>`**: `Xem sự khác biệt giữa hai commit`.
 
 ### **`Hoàn Tác và Reset`:**
 
-22. **`git reset <file>`**: `Bỏ một file khỏi index, giữ nguyên thay đổi trong working directory`.
+1. **`git reset <file>`**: `Bỏ một file khỏi index, giữ nguyên thay đổi trong working directory`.
 
-23. **`git reset --hard <commit_id>`**: `Đặt HEAD và index về một commit cụ thể, xóa tất cả các thay đổi chưa commit`.
+2. **`git reset --hard <commit_id>`**: `Đặt HEAD và index về một commit cụ thể, xóa tất cả các thay đổi chưa commit`.
 
-24. **`git revert <commit_id>`**: `Tạo một commit mới để hoàn tác các thay đổi của một commit cụ thể`.
+3. **`git revert <commit_id>`**: `Tạo một commit mới để hoàn tác các thay đổi của một commit cụ thể`.
 
 ### **`Tag và Release`:**
 
-25. **`git tag <tag_name>`**: `Đánh dấu một commit với một tag`.
+1. **`git tag <tag_name>`**: `Đánh dấu một commit với một tag`.
 
-26. **`git tag -a <tag_name> -m "message"`**: `Đánh dấu một commit với một annotated tag (bao gồm thông điệp)`.
+2. **`git tag -a <tag_name> -m "message"`**: `Đánh dấu một commit với một annotated tag (bao gồm thông điệp)`.
 
-27. **`git push --tags`**: `Đẩy tất cả các tags lên remote repository`.
+3. **`git push --tags`**: `Đẩy tất cả các tags lên remote repository`.
 
 ### **Stash:**
 
-28. **`git stash`**: `Ẩn thay đổi chưa commit để làm việc trên một nhánh khác`.
+1. **`git stash`**: `Ẩn thay đổi chưa commit để làm việc trên một nhánh khác`.
 
-29. **`git stash list`**: `Liệt kê tất cả các stash`.
+2. **`git stash list`**: `Liệt kê tất cả các stash`.
 
-30. **`git stash apply`**: `Áp dụng thay đổi từ stash mới nhất mà không xóa nó`.
+3. **`git stash apply`**: `Áp dụng thay đổi từ stash mới nhất mà không xóa nó`.
 
 ### **`Log và Lịch Sử`:**
 
-31. **`git log`**: `Xem lịch sử commit`.
+1. **`git log`**: `Xem lịch sử commit`.
 
-32. **`git log --oneline`**: `Xem lịch sử commit ngắn gọn`.
+2. **`git log --oneline`**: `Xem lịch sử commit ngắn gọn`.
 
-33. **`git log --graph --oneline --all`**: `Hiển thị lịch sử commit dưới dạng đồ thị`.
+3. **`git log --graph --oneline --all`**: `Hiển thị lịch sử commit dưới dạng đồ thị`.
 
 ### **Config:**
 
-34. **`git config --global user.name "Your Name"`**: `Thiết lập tên người dùng toàn cầu`.
+1. **`git config --global user.name "Your Name"`**: `Thiết lập tên người dùng toàn cầu`.
 
-35. **`git config --global user.email "your.email@example.com"`**: `Thiết lập email người dùng toàn cầu`.
+2. **`git config --global user.email "your.email@example.com"`**: `Thiết lập email người dùng toàn cầu`.
 
-36. **`git config --list`**: `Liệt kê tất cả cấu hình Git`.
+3. **`git config --list`**: `Liệt kê tất cả cấu hình Git`.
 
 ### **`Tham Khảo`:**
 
