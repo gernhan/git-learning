@@ -6,42 +6,55 @@
 
 ### 1. **`Hệ thống Quản lý Phiên bản (Version Control System - VCS)`:**
 
-- **`Khái niệm`:** `Là một hệ thống giúp theo dõi sự thay đổi của mã nguồn (folder dự án, gọi nhanh là code) trong thời gian và duy trì lịch sử của mã nguồn`.
+- **`Khái niệm`**: `Là một hệ thống giúp theo dõi sự thay đổi và duy trì lịch sử của mã nguồn
+  (folder dự án, gọi nhanh là code hoặc source code) trong thời gian phát triển phần mềm`.
 - **`Đối tượng quản lý`:** `File và thư mục`.
 
 ### 2. **`Quản lý Phiên bản Phân tán (Distributed Version Control System - DVCS)`:**
-   - **`Khái niệm`:** `Mỗi máy tính có toàn bộ lịch sử của mã nguồn, không chỉ máy chủ duy nhất như các hệ thống quản lý phiên bản tập trung`.
-   - **`Ưu điểm`:** `Khả năng làm việc offline, phân tán nhiều nơi mà không cần kết nối mạng`.
 
-### 3. **Repository (`Kho chứa code`):**
+- **`Khái niệm`**:
+  `Mỗi máy tính cá nhân của lập trình viên sẽ đều xem được toàn bộ lịch sử của mã nguồn (source
+  code), không chỉ máy chủ duy nhất như các hệ thống quản lý phiên bản tập trung như svn`.
+- **`Ưu điểm`**:
+  `Cho phép phát triển dự án trên nhiều máy tính cá nhân cùng lúc, trước khi hợp nhất tại repository (ví dụ: git@github.com:gernhan/git-learning.git) tại 1 remote server nào đó (ví dụ github.com)`.
 
-- **Local Repository (`Kho tại máy tính cá nhân, cụ thể và đơn giản chỉ là 1 folder`):** `Một bản sao của toàn bộ dự án nằm trên máy tính cá nhân của mỗi lập trình viên`.
-- **Remote Repository (`Kho Remote`):** `Một bản sao chung của dự án được lưu trữ trên máy chủ (ví dụ: GitHub, GitLab)`.
+### 3. **Repository (`Nơi chứa code trên server`):**
 
-### 4. **Commit (`Cam kết`):**
+- **Local Repository**: `Một bản sao của toàn bộ dự án nằm trên máy tính cá nhân của mỗi lập
+  trình viên, chính là folder chứa code`.
+- **Remote Repository**: `Một bản sao chung của dự án được lưu trữ trên máy chủ (ví dụ: GitHub,
+  GitLab), ví dụ: git@github.com:gernhan/git-learning.git`.
 
-- **`Khái niệm`:** `Ghi lại sự thay đổi trong mã nguồn tại một thời điểm cụ thể. Mỗi commit có một thông điệp mô tả về thay đổi đó`.
-- **`Mục đích`:** `Duy trì lịch sử, theo dõi thay đổi và tạo ra một điểm kiểm soát có thể quay trở lại`.
+### 4. **Commit (`Mốc lưu lại các thay đổi`)**
 
-### 5. **Branch (`Nhánh`):**
+- **`Khái niệm`
+  **: `Ghi lại sự thay đổi trong mã nguồn tại một thời điểm cụ thể. Mỗi commit có một thông điệp mô tả về thay đổi đó`.
+- **`Mục đích`
+  **: `Duy trì lịch sử, theo dõi thay đổi và tạo ra một điểm kiểm soát có thể quay trở lại`.
+
+### 5. **Branch (`Nhánh`)**
 
 - **`Khái niệm`:** `Một nhánh là một dãy commit liên tiếp, bắt đầu từ một commit cha chung`.
-- **`Mục đích`:** `Cho phép phát triển đồng thời nhiều tính năng mà không làm ảnh hưởng đến nhau`. 
+- **`Mục đích`:** `Cho phép phát triển đồng thời nhiều tính năng mà không làm ảnh hưởng đến nhau`.
 
-### 6. **Merge (`Gộp nhánh`):**
+### 6. **Merge (`Hợp nhất`):**
 
 - **`Khái niệm`:** `Kết hợp các thay đổi từ một nhánh vào nhánh khác`.
 - **`Mục đích`:** `Hợp nhất công việc đã được phát triển đồng thời trên các nhánh riêng biệt`.
 
-### 7. **Pull Request (`Yêu cầu gộp các commit từ 1 nhánh vào 1 nhánh khác`):**
+### 7. **Pull Request** (`Là một yêu cầu được tạo ra nhằm gộp các commit từ 1 nhánh vào 1 nhánh khác, thường sẽ nhờ 1 người khác review (duyệt lại) và merge (hợp nhất) code`):
 
-- **`Khái niệm`:** `Trên các nền tảng như GitHub, GitLab, Pull Request là cách để yêu cầu và thảo luận về việc hợp nhất thay đổi từ một nhánh vào nhánh chính`.
-- **`Mục đích`:** `Kiểm tra, thảo luận và duyệt lại code trước khi hợp nhất`.
+- **`Khái niệm`**: `Trên các nền tảng như GitHub, GitLab, Pull Request là một yêu cầu được tạo
+  ra về việc hợp nhất thay đổi từ một nhánh vào nhánh chính. Cách tạo 1 pull request thường
+  thông qua giao diện web của repository`.
+- **`Mục đích`**: `Kiểm tra và duyệt lại code trước khi hợp nhất`.
 
 ### 8. **Conflict (`Xung đột`):**
 
-- **`Khái niệm`:** `Xảy ra khi hai nhánh cố gắng thay đổi cùng một phần của một tập tin hoặc một số commit`.
-- **`Giải quyết`:** `Là quá trình thủ công, lựa chọn thay đổi nào sẽ được giữ lại. Quá trình này gọi là Resolve Conflicts`.
+- **`Khái niệm`:** `Xảy ra khi hai nhánh cố gắng thay đổi cùng một phần của một tập tin (Ví dụ
+  cùng thay đổi dòng thứ 10 của 1 file nào đó)`.
+- **`Giải quyết`:
+  ** `Là quá trình thủ công, lựa chọn thay đổi nào sẽ được giữ lại. Quá trình này gọi là Resolve Conflicts`.
 
 ### 9. **Git Ignore:**
 
@@ -53,7 +66,7 @@
 
 ### `Tóm tắt`:
 
-`Git cung cấp một hệ thống mạnh mẽ để quản lý lịch sử và phiên bản của mã nguồn. Bằng cách sử dụng các khái niệm như repository, commit, branch và merge, Git giúp các nhóm phát triển phần mềm làm việc hiệu quả và duy trì mã nguồn của họ một cách an toàn`.
+`Git cung cấp một hệ thống mạnh mẽ để quản lý lịch sử và phiên bản của mã nguồn (source code). Bằng cách sử dụng các khái niệm như repository, commit, branch và merge, Git giúp các nhóm phát triển phần mềm làm việc hiệu quả và duy trì mã nguồn của họ một cách an toàn`.
 
 ## `Các lệnh cơ bản` (Git Commands)
 
