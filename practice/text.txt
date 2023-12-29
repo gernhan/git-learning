@@ -1,2 +1,1 @@
-one line
-two line
+This is an example of git usage.
