@@ -4,26 +4,26 @@
 
 `Git là một hệ thống quản lý mã nguồn (code) phân tán (Distributed Version Control System - DVCS) được thiết kế để theo dõi các thay đổi trong mã nguồn (thực chất đơn giản chỉ là 1 folder) khi nhiều người cùng làm việc trên dự án phần mềm.`
 
-### 1. **`Hệ thống Quản lý Phiên bản (Version Control System - VCS)`:**
+### 1. **`Phần mềm (System - Hệ thống) Quản lý Phiên bản (Version Control System - VCS)`:**
 
-- **`Khái niệm`**: `Là một hệ thống giúp theo dõi sự thay đổi và duy trì lịch sử của mã nguồn
-  (folder dự án, gọi nhanh là code hoặc source code) trong thời gian phát triển phần mềm`.
+- **`Khái niệm`**: `Là một phần mềm (có thể gọi là một hệ thống, vì nó bao gồm phần mềm cài trên máy cá nhân và các server chứa repo như github, gitlab, bitbucket) giúp theo dõi sự thay đổi và duy trì lịch sử của mã nguồn
+(folder dự án, gọi nhanh là code hoặc source code) trong thời gian phát triển phần mềm`.
 - **`Đối tượng quản lý`:** `File và thư mục`.
 
 ### 2. **`Quản lý Phiên bản Phân tán (Distributed Version Control System - DVCS)`:**
 
 - **`Khái niệm`**:
   `Mỗi máy tính cá nhân của lập trình viên sẽ đều xem được toàn bộ lịch sử của mã nguồn (source
-  code), không chỉ máy chủ duy nhất như các hệ thống quản lý phiên bản tập trung như svn`.
+code), khác với các hệ thống khác như như svn`.
 - **`Ưu điểm`**:
-  `Cho phép phát triển dự án trên nhiều máy tính cá nhân cùng lúc, trước khi hợp nhất tại repository (ví dụ: git@github.com:gernhan/git-learning.git) tại 1 remote server nào đó (ví dụ github.com)`.
+  `Cho phép phát triển dự án trên nhiều máy tính cá nhân cùng lúc, trước khi hợp nhất tại remote repository (ví dụ: git@github.com:gernhan/git-learning.git) tại 1 remote server nào đó (ví dụ github.com)`.
 
-### 3. **Repository (`Nơi chứa code trên server`):**
+### 3. **Repository (`Mỗi dự án sẽ có 1 repository tương ứng trên server`):**
 
 - **Local Repository**: `Một bản sao của toàn bộ dự án nằm trên máy tính cá nhân của mỗi lập
-  trình viên, chính là folder chứa code`.
+trình viên, chính là folder chứa code`.
 - **Remote Repository**: `Một bản sao chung của dự án được lưu trữ trên máy chủ (ví dụ: GitHub,
-  GitLab), ví dụ: git@github.com:gernhan/git-learning.git`.
+GitLab), ví dụ: git@github.com:gernhan/git-learning.git`.
 
 ### 4. **Commit (`Mốc lưu lại các thay đổi`)**
 
@@ -45,14 +45,14 @@
 ### 7. **Pull Request** (`Là một yêu cầu được tạo ra nhằm gộp các commit từ 1 nhánh vào 1 nhánh khác, thường sẽ nhờ 1 người khác review (duyệt lại) và merge (hợp nhất) code`):
 
 - **`Khái niệm`**: `Trên các nền tảng như GitHub, GitLab, Pull Request là một yêu cầu được tạo
-  ra về việc hợp nhất thay đổi từ một nhánh vào nhánh chính. Cách tạo 1 pull request thường
-  thông qua giao diện web của repository`.
+ra về việc hợp nhất thay đổi từ một nhánh vào nhánh chính (thường là master). Cách tạo 1 pull request thường
+thông qua giao diện web của repository`.
 - **`Mục đích`**: `Kiểm tra và duyệt lại code trước khi hợp nhất`.
 
 ### 8. **Conflict (`Xung đột`):**
 
 - **`Khái niệm`:** `Xảy ra khi hai nhánh cố gắng thay đổi cùng một phần của một tập tin (Ví dụ
-  cùng thay đổi dòng thứ 10 của 1 file nào đó)`.
+cùng thay đổi dòng thứ 10 của 1 file nào đó)`.
 - **`Giải quyết`:
   ** `Là quá trình thủ công, lựa chọn thay đổi nào sẽ được giữ lại. Quá trình này gọi là Resolve Conflicts`.
 
@@ -61,8 +61,9 @@
 - **`Khái niệm`:** `Một tệp tin đặc biệt (`.gitignore`) để chỉ định những tệp và thư mục nào không nên được theo dõi bởi Git`.
 
 ### 10. **Tag:**
-   - **`Khái niệm`:** `Một "đánh dấu" ở một commit cụ thể để đánh dấu một điểm trong lịch sử`.
-   - **`Mục đích`:** `Được sử dụng để chỉ ra các phiên bản phần mềm (ví dụ: `v1.0`)`.
+
+- **`Khái niệm`:** `Một "đánh dấu" ở một commit cụ thể để đánh dấu một điểm trong lịch sử`.
+- **`Mục đích`:** `Được sử dụng để chỉ ra các phiên bản phần mềm (ví dụ: `v1.0`)`.
 
 ### `Tóm tắt`:
 
@@ -167,3 +168,28 @@
 - [Git Official Documentation](https://git-scm.com/doc)
 
 `Hãy nhớ kiểm tra [tài liệu chính thức của Git](https://git-scm.com/doc) để biết thêm chi tiết và lựa chọn linh hoạt trong việc sử dụng các lệnh này`.
+
+## Program
+
+### Model Client-Server (Front-end and Back-end)
+
+#### Back-end
+
+##### API(s)
+
+###### REST API(s)
+
+- HTTP
+
+##### Logic(s)
+
+## Java
+
+- SDK (Software Development Kit): JVM + Library
+
+  - Java 8
+  - Java 11
+
+- How to build and run a Java application
+
+### Syntax
