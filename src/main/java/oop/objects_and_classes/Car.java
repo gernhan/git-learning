@@ -5,6 +5,17 @@ public class Car {
   String color;
   String model;
 
+  // Constructors
+  public Car() {
+    System.out.println("No args constructor");
+  }
+
+  public Car(String color, String model) {
+    System.out.println("All args constructor");
+    this.color = color;
+    this.model = model;
+  }
+
   // Method
   public void drive() {
     System.out.println("Car is driving.");
