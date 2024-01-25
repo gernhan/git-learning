@@ -2,8 +2,9 @@ package oop.objects_and_classes;
 
 public class Car {
   // Attributes
-  String color;
-  String model;
+  private String color;
+  private String model;
+  private String mode;
 
   // Constructors
   public Car() {
@@ -17,19 +18,22 @@ public class Car {
   }
 
   // Method
-  public void drive() {
-    System.out.println("Car is driving.");
+  public void drive(String mode) {
+    this.mode = mode;
+    System.out.println(String.format("this car is driving in %s mode.", mode));
+  }
+
+  @Override
+  public String toString() {
+    return "Car{color=" + color + ", model=" + model + ", mode=" + mode + "}";
   }
 
   public static void main(String[] args) {
     // Creating an object of Car
-    Car myCar = new Car();
-
-    // Setting attributes
-    myCar.color = "Red";
-    myCar.model = "Sedan";
+    Car myCar = new Car("Red", "Sedan");
 
     // Calling method
-    myCar.drive();
+    myCar.drive("normal mode");
+    myCar.drive("sport mode");
   }
 }
