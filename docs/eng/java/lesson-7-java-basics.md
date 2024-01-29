@@ -47,12 +47,12 @@ Certainly, summarizing all of Java's syntax in a single response would be too ex
 ## Packages and Imports
 
 - Java classes are organized into packages.
-- The `import` statement is used to include classes from other packages.
+- The `import` statement includes classes from other packages.
 
 ## Interfaces
 
 - Interfaces define a contract for classes to implement.
-- Multiple inheritance is achieved through interfaces.
+- Interfaces enables multiple inheritance.
 
 ## Modifiers
 

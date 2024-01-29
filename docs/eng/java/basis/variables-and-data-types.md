@@ -84,7 +84,7 @@ Java has two categories of data types:
 
 ### `Enums` (Enumerations)
 
-- Enums are a special data type used to define collections of constants.
+- `Enum`s are a special data type used to define collections of constants.
 - Enumerations are often used to represent a fixed set of values, like days of the week or months.
 - Example:
   ```java

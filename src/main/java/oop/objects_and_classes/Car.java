@@ -11,14 +11,14 @@ public class Car {
     System.out.println("No args constructor");
   }
 
-  public Car(String color, String model) {
+  public Car(final String color, final String model) {
     System.out.println("All args constructor");
     this.color = color;
     this.model = model;
   }
 
   // Method
-  public void drive(String mode) {
+  public void drive(final String mode) {
     this.mode = mode;
     System.out.println(String.format("this car is driving in %s mode.", mode));
   }
@@ -28,9 +28,9 @@ public class Car {
     return "Car{color=" + color + ", model=" + model + ", mode=" + mode + "}";
   }
 
-  public static void main(String[] args) {
+  public static void main(final String[] args) {
     // Creating an object of Car
-    Car myCar = new Car("Red", "Sedan");
+    final Car myCar = new Car("Red", "Sedan");
 
     // Calling method
     myCar.drive("normal mode");
