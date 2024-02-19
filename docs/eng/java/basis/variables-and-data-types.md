@@ -39,15 +39,21 @@ Java has two categories of data types:
 - There are eight primitive data types:
 
   - Numeric Types:
-    - `byte`: 8-bit signed integer.
-    - `short`: 16-bit signed integer.
-    - `int`: 32-bit signed integer.
-    - `long`: 64-bit signed integer.
+    - `byte`: 8-bit signed integer (-2^7 → 2^7 - 1).
+    - `short`: 16-bit signed integer (-2^15 → 2^15 - 1).
+    - `int`: 32-bit signed integer (-2^31 → 2^31 - 1).
+    - `long`: 64-bit signed integer (-2^63 → 2^63 - 1).
+
     - `float`: 32-bit floating-point.
     - `double`: 64-bit floating-point.
   - Other Types:
     - `char`: 16-bit Unicode character.
-    - `boolean`: Represents true or false.
+      - 'A', 'b', '1', '`', '/', '%'
+    - `boolean`: Represents true or false. (true, false)
+  - String Types: 
+  ```java
+  myString = "Hello, Java!";
+  ```
 
 - Example:
   ```java
@@ -65,9 +71,10 @@ Java has two categories of data types:
 
 - Example:
   ```java
-  String myString = "Hello, Java!";
+  StringBuilder myObject = new StringBuilder(); 
   MyClass myObject = new MyClass(); // Assuming MyClass is a user-defined class
-  int[] myArray = {1, 2, 3};
+  int[][] myArray = {{1, 2, 3}, {1, 2, 3}, {1, 2, 3}};
+  QuarticEquation[] myArray = {new QuarticEquation(4, 6 ,4), new QuarticEquation(1, 2 ,4), new QuarticEquation(8, 9, 0)};
   ```
 
 ## More about Data Types
