@@ -73,6 +73,7 @@ Java has two categories of data types:
   ```java
   StringBuilder myObject = new StringBuilder(); 
   MyClass myObject = new MyClass(); // Assuming MyClass is a user-defined class
+  // 342356, 13242364, 234526 
   int[][] myArray = {{1, 2, 3}, {1, 2, 3}, {1, 2, 3}};
   QuarticEquation[] myArray = {new QuarticEquation(4, 6 ,4), new QuarticEquation(1, 2 ,4), new QuarticEquation(8, 9, 0)};
   ```
